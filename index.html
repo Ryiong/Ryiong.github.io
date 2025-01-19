@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryiong Laptop</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/User.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <div id="app" class="relative w-100">
+        <div id="desktop-app" class="h-100">
+            <div id="content-desktop" class="relative h-100">
+                <ul class="app-list">
+                    <li class="list-item">
+                        <div onclick="window.open('http://ryiong-hok.blogspot.com')" class="app" id="HoKApp">
+                            <div class="icon-app w-100">
+                                <img src="./assets/img/hokapp.png" alt="hokapp">
+                            </div>
+                            <p class="name-app">HoK</p>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div onclick="window.open('/Ryiong-HoK')" class="app" id="HoKApp">
+                            <div class="icon-app w-100">
+                                <img src="./assets/img/hokapp.png" alt="hokapp">
+                            </div>
+                            <p class="name-app">HoK Test</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="four-layout">
+                    <li class="fl-item">
+                        <div onclick="OpenMessage('Không thể truy cập', 'Bạn không có quyền để truy cập vào khu vực này.', 'OK')" class="app" id="UserFolder">
+                            <div class="icon-app w-100">
+                                <img src="./assets/img/FolderUser.png" alt="FolderUser">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="fl-item"></li>
+                    <li class="fl-item"></li>
+                    <li class="fl-item"></li>
+                </ul>
+                <div id="message-box" class="message-box none">
+                    <div class="content-layout">
+                        <h2 class="title-message"></h2>
+                        <p class="content-message"></p>
+                    </div>
+                    <div onclick="CloseMessage()" class="button-layout"></div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+</body>
+
+</html>
